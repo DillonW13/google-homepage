@@ -1,0 +1,222 @@
+<html>
+    <body>
+    <head>
+       <meta charset="UTF-8">
+    </head>
+    <style>
+        body, input, button {
+            font-size: 14px;
+            font-family: arial, sans-serif;
+            background: #FFFFFF;
+            color: #222;
+        }
+        .logo {
+            display: flex;
+            flex-wrap: nowrap;
+            min-height: 92px;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        .search-bar {
+            display: flex;
+            background-color: transparent;
+            flex-wrap: nowrap;
+            min-height: 46px;
+            justify-content: flex-start;
+            align-items: stretch;
+            flex-grow: 1;
+            flex-shrink: 1;
+            border: 1px solid #dfe1e5;
+            border-radius: 25px;
+            margin: 0 auto;
+            padding-left: 10px;
+            padding-right: 13px;
+            width: 570px;
+            max-width: 600px;
+        }
+        .search-icon {
+            display: flex;
+            flex-wrap: nowrap;
+            position: relative;
+            width: 35px;
+            padding-right: 3px;
+            justify-content: center;
+            align-items: center;  
+        }
+
+        #s-icon {
+            display: block;
+            color: rgb(154, 160, 166);
+            height: 20px;
+            width: 20px;
+            filter: opacity(35%);
+        }
+
+        .search-input {
+            display: flex;
+            flex-basis: 100%;
+            position: relative;
+        }
+
+        #text-input {
+            outline: none;
+            border: 0px;
+            position: relative;
+            width: 100%;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        .search-content {
+            background-color: transparent;
+            position: relative;
+            margin-top: 27px;
+        }
+
+        .menu-buttons {
+            background-color: transparent;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin: 27px auto;
+            width: 300px;
+        }
+
+        button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            height: 36px;
+            width: 130px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 8px 12px;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        .navbar li a {
+            display: block;
+            color: #222;
+            padding: 14px 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .navbar li button {
+            width: 95px;
+            border: 1px solid #1a73e8;
+            border-radius: 4px;
+            background-color: #1a73e8;
+            color: white;
+            height: 38px;
+        }
+
+        .gb_Ve {
+            display: block;
+            filter: opacity(65%);
+            background-color: transparent;
+            width: 24px;
+            height: 24px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-left: 15px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0; 
+            bottom: 0;
+            background-color: #f2f2f2;
+            width: 100%;
+            height: 36px;
+            padding-bottom: 10px;
+        }
+    
+        .bottom-nav-bar li a {
+            display: block;
+            color: gray;
+            padding: 14px 10px;
+            text-align: center;
+            text-decoration: none;
+            padding-top: 0px;
+            padding-left: 5px;
+            padding-right: 25px;
+            flex-shrink: 0;
+        }
+
+        .eco-message {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: transparent;
+            position: relative;
+            width: 320%;
+            
+        }
+
+        #leaf {
+            flex: 0 0 auto;
+            display: block;
+            height: 14px;
+            flex: 0 0 auto;
+        }
+    </style>
+        <div class="navbar">
+            <ul class="top-nav-bar">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Store">Store</a></li>
+                <li style="float: right;"><button>Sign In</button></li>
+                <li style="float: right;"><svg class="gb_Ve" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg></li>
+                <li style="float: right; font-size: 13px;"><a href="#Images">Images</a></li>
+                <li style="float: right; font-size: 13px;"><a href="#Gmail">Gmail</a></li>
+            </ul>
+        </div>
+
+        <div class="logo">
+            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Inc Logo">
+        </div>
+            
+        <div class="search-content">
+            <form class="input-form">
+        
+                <div class="search-bar">
+                    <div class="search-icon">
+                        <img src="google_search.png" id="s-icon" alt="Google Search Icon">
+                    </div>
+                    <div class="search-input">
+                        <input type="text" id="text-input" style="font-size: 16px">  
+                    </div>
+                </div>
+                <div class="menu-buttons">
+                    <button class="search-button">Google Search</button>
+                    <button class="lucky-button">I'm Feeling Lucky</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="footer">
+            <ul class="bottom-nav-bar" style="list-style-type: none;">
+                <li><a href="#Advertising">Advertising</a></li>
+                <li><a href="#Business">Business</a></li>
+                <li><a href="#HowSearchWorks">How Search Works</a></li>
+                <li><div class="eco-message">
+                    <img src="leaf.png" id="leaf" alt="Green Leaf">
+                    <a href="#CarbonNeutral">Carbon neutral since 2007</a>
+                </div></li>
+                <li style="float: right; padding-right: 35px; padding-left: 5px;"><a href="#Settings">Settings</a></li>
+                <li style="float: right;"><a href="#Terms">Terms</a></li>
+                <li style="float: right;"><a href="#Privacy">Privacy</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
